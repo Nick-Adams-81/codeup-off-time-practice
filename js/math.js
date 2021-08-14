@@ -45,6 +45,25 @@
     function remainder(a, b) {
         return a % b;
     }
-
     console.log(remainder(9, 7));
+
+    // Creating three parameters that will take in an operator and two numbers
+    // and using if, else if, and else statements to check the operator and run appropriate math
+    function doMath(operator, a, b) {
+        if(operator === '+') {
+            return a + b;
+        } else if(operator === '-') {
+            return a - b;
+        } else if(operator === '*') {
+            return a * b;
+        } else if(operator === '/') {
+            return a / b;
+        } else {
+            return a % b;
+        }
+    }
+
+    console.log(doMath("*", 6, 5));
+
+
 })()
