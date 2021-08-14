@@ -1,5 +1,5 @@
 'use strict';
-
+// --------  STRING MANIPULATION  -------- //
 (function() {
 
     // function returning a string
@@ -19,4 +19,12 @@
         return str. split('').reverse().join('')
     }
     console.log(reverseString('hello world'));
+
+    //indexOf function
+    var str = 'Nicholas Adams';
+    console.log(str.indexOf(('N')));
+    //logging the length of variable str
+    console.log(str.length);
+    // remove first character of a string(substring)
+    console.log(str.substr(9));
 })()
