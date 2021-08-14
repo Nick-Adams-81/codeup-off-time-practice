@@ -1,21 +1,7 @@
 'use strict';
 // IIFE function that will wrap all our js
 (function() {
-    // finding the length of a string //
-    function  stringLength(str) {
-        for(var i = 0; i < str.length; i++) {
-            return str.length;
-        }
-    }
-    console.log(stringLength('hello cruel worl'));
 
-    // reversing a string //
-    function revString(str) {
-        return str.split('').reverse().join('');
-    }
-    console.log(revString('hello'));
-
-    // basic math //
 
     // Addition
     function add(a, b) {
