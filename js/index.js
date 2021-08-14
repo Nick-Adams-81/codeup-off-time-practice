@@ -39,6 +39,12 @@
     function divide(a, b) {
         return a / b;
     }
-
     console.log(divide(9, 3));
+
+    // Remainder(modulus operator)
+    function remainder(a, b) {
+        return a % b;
+    }
+
+    console.log(remainder(9, 7));
 })()
