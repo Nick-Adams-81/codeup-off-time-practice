@@ -1,14 +1,15 @@
 'use strict';
 // --------  STRING METHODS  -------- //
+// IIFE function that wraps all our code
 (function() {
 
-    // function returning the argument
+    // function returning a single parameter
     function readInput(str) {
         return str;
     }
     console.log(readInput('hello'));
 
-    // function finding a strings length
+    // function finding a parameters length
     function stringLength(str) {
         return str.length;
     }
@@ -38,8 +39,5 @@
 
     // replacing parts of our string using the replace method
     console.log(str.replace('Nicholas', 'Nick'));
-
-
-
 
 })()
