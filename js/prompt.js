@@ -8,4 +8,9 @@
     // prompt asking a users favorite food
     var food = prompt('What is your favorite food ' + name + '?');
     alert(food + ' is my favorite too ' + name + '!');
+
+    var sport = prompt('What is your favorite sport ' + name + '?');
+    alert('I love ' + sport + ' too ' + name + '!!!');
+
+
 })()
