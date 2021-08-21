@@ -39,4 +39,11 @@
     for(var i = names.length - 1; i >= 0; i--) {
         console.log(names[i])
     }
+
+    // forEach loop
+    names.forEach(function(name, index, array) {
+        console.log('This name: ' + name + ', is at index: ' + index);
+        // how to log a specific item in array using its index
+        console.log(array[2]);
+    })
 })()
