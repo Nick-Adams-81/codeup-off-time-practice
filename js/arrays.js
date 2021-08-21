@@ -2,7 +2,7 @@
 
 (function() {
 
-    var names = ['Nick', 'Chris', 'Jenny'];
+    var names = ['Nick', 'Chris', 'Jenny', 'leon', 'Neo', 'Mr. Pink'];
 
     // finding the length of an array
     console.log(names.length);
@@ -25,4 +25,8 @@
     // removing an item from the end of an array
     names.pop();
     console.log(names);
+
+    // selecting specific items in an array
+    var newNames = names.slice(0,3);
+    console.log(newNames);
 })()
