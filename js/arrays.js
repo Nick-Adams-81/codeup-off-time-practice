@@ -22,4 +22,7 @@
     names.shift();
     console.log(names);
 
+    // removing an item from the end of an array
+    names.pop();
+    console.log(names);
 })()
