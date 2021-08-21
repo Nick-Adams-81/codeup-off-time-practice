@@ -2,7 +2,7 @@
 // IIFE function that will wrap all our js
 (function() {
 
-
+    // ---------- MATH OPERATORS IN FUNCTIONS ---------- //
     // Addition
     function add(a, b) {
         return a + b;
