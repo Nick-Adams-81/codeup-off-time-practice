@@ -11,8 +11,11 @@
     console.log(names.indexOf('Jenny'));
 
     // inserting an item to the front of the array
-
     names.unshift('T-1000');
+    console.log(names);
+
+    // inserting an item to the end of an array
+    names.push('Hal-9000');
     console.log(names);
 
 })()
