@@ -18,4 +18,8 @@
     names.push('Hal-9000');
     console.log(names);
 
+    // removing an item from beginning of an array
+    names.shift();
+    console.log(names);
+
 })()
