@@ -29,4 +29,9 @@
     // selecting specific items in an array
     var newNames = names.slice(0,3);
     console.log(newNames);
+
+    // looping forward through an array
+    for(var i = 0; i < names.length; i++) {
+        console.log(names[i]);
+    }
 })()
