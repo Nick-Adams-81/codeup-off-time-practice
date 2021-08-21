@@ -19,5 +19,12 @@
         num++;
     }
 
+    // do while loop
+    var number = 0;
+    do {
+        console.log(number);
+        number++;
+    } while(number < 9);
+
 
 })()
