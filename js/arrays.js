@@ -57,4 +57,15 @@
     // turning an array into a string with join
     var newNamesString = newNamesArray.join(',');
     console.log(newNamesString);
+
+    // taking special chars out of a string using a forEach loop
+
+    var numbers = '123-456-7890|555-555-5555|987-654-3210';
+    var newNumbers = numbers.split('|');
+    console.log(newNumbers);
+
+    newNumbers.forEach(function(number) {
+        var newNumber = number.split('-').join('');
+        console.log(newNumber);
+    })
 })()
