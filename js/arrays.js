@@ -68,4 +68,10 @@
         var newNumber = number.split('-').join('');
         console.log(newNumber);
     })
+
+    console.log(newNumbers);
+
+    newNumbers.forEach(function(number, index, array) {
+        console.log(number, index, array);
+    })
 })()
