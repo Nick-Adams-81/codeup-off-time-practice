@@ -47,10 +47,14 @@
     //     console.log(array[1]);
     // })
 
-    // turning a string into an array
+    // turning a string into an array using split
 
     var namesString = 'Nick|Walt|Jenny|T-1000|Hal-9000';
     console.log(namesString)
-    var newNamesString = namesString.split('|');
+    var newNamesArray = namesString.split('|');
+    console.log(newNamesArray);
+
+    // turning an array into a string with join
+    var newNamesString = newNamesArray.join(',');
     console.log(newNamesString);
 })()
