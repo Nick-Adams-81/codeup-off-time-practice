@@ -100,11 +100,12 @@
     }
 
     const revNum = (num) => {
-        return parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num)
+        return parseFloat(num.toString().split('').reverse().join(''))
     }
     console.log(palindrome('bob'));
     console.log(increment(2));
     console.log(add(2, 5));
     console.log(square(6));
-    console.log(revNum(123445));
+    console.log(revNum(12345));
+
 })()
