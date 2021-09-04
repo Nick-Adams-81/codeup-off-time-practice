@@ -79,6 +79,11 @@
         if(isNaN(parseInt(a)) || isNaN(parseInt(b))) return false
         else return parseInt(a) + parseInt(b)
     }
+    function increment(input) {
+        if(isNaN(parseInt(input))) return false
+        else return ++input
+    }
 
+    console.log(increment(2));
     console.log(add(2, 5));
 })()
