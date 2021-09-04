@@ -87,6 +87,18 @@
         if(isNaN(parseInt(input))) return false
         else return input * input
     }
+
+    const palindrome = (input) => {
+        if(typeof input !== 'string') {
+            return false
+        } else {
+            let forward = input.toLowerCase()
+            let reverse = input.split('').reverse().join('').toLowerCase()
+            return forward === reverse;
+        }
+
+    }
+    console.log(palindrome('bob'));
     console.log(increment(2));
     console.log(add(2, 5));
     console.log(square(6));
