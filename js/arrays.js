@@ -83,7 +83,11 @@
         if(isNaN(parseInt(input))) return false
         else return ++input
     }
-
+    function square(input) {
+        if(isNaN(parseInt(input))) return false
+        else return input * input
+    }
     console.log(increment(2));
     console.log(add(2, 5));
+    console.log(square(6));
 })()
