@@ -74,4 +74,11 @@
     newNumbers.forEach(function(number, index, array) {
         console.log(number, index, array);
     })
+
+    function add(a, b) {
+        if(isNaN(parseInt(a)) || isNaN(parseInt(b))) return false
+        else return parseInt(a) + parseInt(b)
+    }
+
+    console.log(add(2, 5));
 })()
