@@ -99,9 +99,15 @@
 
     }
 
+    function revStr(input) {
+        return input.split('').reverse().join('')
+    }
+
     const revNum = (num) => {
         return parseFloat(num.toString().split('').reverse().join(''))
     }
+
+    console.log(revStr('hello'));
     console.log(palindrome('bob'));
     console.log(increment(2));
     console.log(add(2, 5));
