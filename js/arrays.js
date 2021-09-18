@@ -114,4 +114,10 @@
     console.log(square(6));
     console.log(revNum(12345));
 
+
+
+
+
+
+
 })()
