@@ -34,5 +34,17 @@
         .then(res => console.log(res))
         .catch(err => console.log(err))
 
+    // with 2 api calls
+    const gitHubPromise = fetch('https://api.github.com/repositories')
+    const bitbucketPromise = fetch('https://api.bitbucket.org/2.0/repositories')
+
+    Promise.all([gitHubPromise, bitbucketPromise])
+        .then(data => {
+            console.log(data)
+        })
+        .catch(err => {
+            console.log(err)
+        })
+
 
 })()
