@@ -38,3 +38,18 @@ console.log(eightiesCompanies);
 
 const overTenYears = companies.filter(company => (company.end - company.start >= 10))
 console.log(overTenYears)
+
+// map //
+//create array of company names
+
+const agesSquare = ages.map(age => Math.sqrt(age))
+console.log(agesSquare)
+const ageTimes2 = ages.map(age => age * 2)
+console.log(ageTimes2)
+
+const agesChainedMap = ages
+    .map(age => Math.sqrt(age))
+    .map(age => age * 2)
+console.log(agesChainedMap)
+const companyNames = companies.map(company => {return company.name});
+console.log(companyNames)
