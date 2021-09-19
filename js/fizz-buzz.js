@@ -55,6 +55,4 @@
                 console.log(user)
             })
         })
-
-
 })()
