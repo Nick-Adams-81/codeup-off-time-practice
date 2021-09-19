@@ -30,20 +30,30 @@
     });
 
     // some promises practice
-    fetch('https://api.github.com/users')
-        .then(res => console.log(res))
-        .catch(err => console.log(err))
+    // fetch('https://api.github.com/users')
+    //     .then(res => console.log(res))
+    //     .catch(err => console.log(err))
 
     // with 2 api calls
-    const gitHubPromise = fetch('https://api.github.com/repositories')
-    const bitbucketPromise = fetch('https://api.bitbucket.org/2.0/repositories')
+    // const gitHubPromise = fetch('https://api.github.com/repositories')
+    // const bitbucketPromise = fetch('https://api.bitbucket.org/2.0/repositories')
+    //
+    // Promise.all([gitHubPromise, bitbucketPromise])
+    //     .then(data => {
+    //         console.log(data)
+    //     })
+    //     .catch(err => {
+    //         console.log(err)
+    //     })
 
-    Promise.all([gitHubPromise, bitbucketPromise])
-        .then(data => {
-            console.log(data)
-        })
-        .catch(err => {
-            console.log(err)
+    // parsing the return data to json
+    fetch('https://api.github.com/users')
+        .then(res => res.json())
+        //.then(res => console.log(res))
+        .then(users => {
+            users.forEach((user) => {
+                console.log(user)
+            })
         })
 
 
