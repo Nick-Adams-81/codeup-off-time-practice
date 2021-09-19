@@ -24,4 +24,15 @@
 
     console.log(twoSum(5, 6, 11));
 
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+    arr.forEach((item, index, arr) => {
+        console.log(item);
+    });
+
+    // some promises practice
+    fetch('https://api.github.com/users')
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+
+
 })()
