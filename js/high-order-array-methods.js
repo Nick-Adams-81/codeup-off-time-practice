@@ -7,7 +7,7 @@ const companies = [
     {name: 'company 4', category: 'Retail', start: 1989, end: 2010},
     {name: 'company 5', category: 'Technology', start: 2009, end: 2014},
     {name: 'company 6', category: 'Finance', start: 1987, end: 2010},
-    {name: 'company 7', category: 'Auto', start: 1986, end: 1996},
+    {name: 'company 7', category: 'Auto', start: 1986, end: 1995},
     {name: 'company 8', category: 'Technology', start: 2011, end: 2016},
     {name: 'company 9', category: 'Finance', start: 1981, end: 1989},
 ]
@@ -30,3 +30,11 @@ for(let i = 0; i < ages.length; i++) {
 const willDrink = ages.filter(age => age >= 21)
 console.log(willDrink);
 
+const retailCompanies = companies.filter(company => company.category === 'Retail');
+console.log(retailCompanies);
+
+const eightiesCompanies = companies.filter(company => company.start >= 1980 && company.start < 1990);
+console.log(eightiesCompanies);
+
+const overTenYears = companies.filter(company => (company.end - company.start >= 10))
+console.log(overTenYears)
