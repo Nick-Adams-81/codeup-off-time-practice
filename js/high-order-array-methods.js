@@ -12,7 +12,7 @@ const companies = [
     {name: 'company 9', category: 'Finance', start: 1981, end: 1989},
 ]
 
-const ages = [33, 12, 20, 15, 6, 54, 21, 44, 61, 13, 45, 19, 32];
+const ages = [33, 12, 20, 15, 6, 54, 21, 44, 61, 13, 45, 19, 32, 4];
 
 // companies.forEach(company => console.log(company))
 
@@ -50,6 +50,22 @@ console.log(ageTimes2)
 const agesChainedMap = ages
     .map(age => Math.sqrt(age))
     .map(age => age * 2)
-console.log(agesChainedMap)
+//console.log(agesChainedMap)
 const companyNames = companies.map(company => {return company.name});
-console.log(companyNames)
+//console.log(companyNames)
+
+// sort //
+const sortedCompanies = companies.sort((c1, c2) => (c1.start > c2.start ? 1 : -1))
+console.log(sortedCompanies)
+
+const sortedAges = ages.sort((a, b) => b - a)
+console.log(sortedAges)
+
+
+// reduce //
+const ageSum = ages.reduce((total, age) =>  total + age, 0)
+console.log(ageSum)
+
+const getTotalYears = companies.reduce((total,company) => total + (company.end - company.start), 0)
+
+console.log(getTotalYears)
