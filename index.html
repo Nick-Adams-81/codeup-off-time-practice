@@ -9,12 +9,30 @@
 </head>
 <body>
     <h1>look in the console to see the magic!</h1>
+
+    <form action="" name="myform">
+        <input type="text" name="name">
+        <div id="theName"></div>
+    </form>
+    <script type="text/javascript">
+        (function() {
+            var form = document.getElementsByName('myform')[0];
+            if (localStorage['name'] !== undefined) {
+                var displayArea = document.getElementById('theName');
+                displayArea.textContent = localStorage['name'];
+            }
+            form.addEventListener('submit', function() {
+                var nameField = document.getElementsByName('name')[0];
+                localStorage['name'] = nameField.value;
+            }, false);
+        })();
+    </script>
 <!--<script src="js/math.js"></script> !-->
 <!--<script src="js/strings.js"></script> !-->
 <!--<script src="js/prompt.js"></script> !-->
 <!-- <script src="js/loops.js"></script> !-->
 <!--<script src="js/arrays.js"></script>-->
 <!--<script src="js/fizz-buzz.js"></script>-->
-<script src="js/high-order-array-methods.js"></script>
+<!--<script src="js/high-order-array-methods.js"></script>-->
 </body>
 </html>
