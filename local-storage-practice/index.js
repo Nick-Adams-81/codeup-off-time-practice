@@ -1,4 +1,4 @@
-console.log('hello')
+
 
 
 var text = document.getElementById('text').value
