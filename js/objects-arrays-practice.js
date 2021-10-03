@@ -69,13 +69,17 @@ persons.push(
     }
 )
 
-persons.forEach(function (person) {
-    console.log(person.name)
-    console.log(person.age)
-    console.log(person.mother)
-    console.log(person.father)
-    console.log(' --------- ')
+// persons.forEach(function (person) {
+//     console.log(person.name)
+//     console.log(person.age)
+//     console.log(person.mother)
+//     console.log(person.father)
+//     console.log(' --------- ')
+//
+// })
 
-})
+for(var i = 0; i < persons.length; i++) {
+    console.log(persons[i])
+}
 
 
