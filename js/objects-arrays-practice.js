@@ -4,7 +4,7 @@ var obj1 = {}
 
 obj1.name = "nick"
 obj1.age = 39
-console.log(obj1)
+//console.log(obj1)
 
 
 var arr1 = []
@@ -12,11 +12,11 @@ var arr1 = []
 arr1.unshift(1)
 arr1.push(2)
 arr1.push(3)
-console.log(arr1)
+//console.log(arr1)
 
 arr1.pop()
 arr1.shift()
-console.log(arr1)
+//console.log(arr1)
 
 var persons = [
     {
@@ -53,13 +53,28 @@ var persons = [
         father: 'john doe sr'
     }
 ]
-console.log(persons)
 
-persons.forEach(function(person) {
+console.log(persons)
+persons.push(
+    {
+        name: 'clark adams',
+        age: 63,
+        car: {
+            make: 'volkswagon',
+            model: 'beetle',
+            year: 1972
+        },
+        mother: 'jennifer adams',
+        father: 'john adams'
+    }
+)
+
+persons.forEach(function (person) {
     console.log(person.name)
     console.log(person.age)
     console.log(person.mother)
     console.log(person.father)
+    console.log(' --------- ')
 
 })
 
