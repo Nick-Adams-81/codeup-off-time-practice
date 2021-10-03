@@ -69,21 +69,23 @@ persons.push(
     }
 )
 
-// persons.forEach(function (person) {
-//     console.log(person.name)
-//     console.log(person.age)
-//     console.log(person.mother)
-//     console.log(person.father)
-//     console.log(' --------- ')
-//
-// })
+persons.forEach(function (person) {
+    console.log(person.name)
+    console.log(person.age)
+    console.log(person.mother)
+    console.log(person.father)
+    console.log(' --------- ')
 
-for(var i = 0; i < persons.length; i++) {
-    console.log(persons[i])
+})
+
+
+var arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for(var i = 0; i < arr2.length; i++) {
+    console.log(arr2[i])
 }
 
-for(var j = persons.length - 1; j >=0; j--) {
-    console.log(persons[j])
+for(var j = arr2.length - 1; j >=0; j--) {
+    console.log(arr2[j])
 }
 
 
