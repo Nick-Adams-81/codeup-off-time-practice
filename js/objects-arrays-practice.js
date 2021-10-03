@@ -13,3 +13,45 @@ arr1.unshift(1)
 arr1.push(2)
 arr1.push(3)
 console.log(arr1)
+
+arr1.pop()
+arr1.shift()
+console.log(arr1)
+
+var people = [
+    {
+        name: 'nick adams',
+        age: 39,
+        car: {
+            make: 'tesla',
+            model: 3,
+            year: 2019
+        },
+        mother: 'terry adams',
+        father: 'clark adams'
+    },
+    {
+        name: 'john doe',
+        age: 30,
+        car: {
+            make: 'ford',
+            model: 'mustang',
+            year: 2017
+        },
+        mother: 'jane doe',
+        father: 'john doe sr'
+    },
+    {
+        name: 'jane doe',
+        age: 27,
+        car: {
+            make: 'toyota',
+            model: 'celica',
+            year: 2012
+        },
+        mother: 'janet doe',
+        father: 'john doe sr'
+    }
+]
+
+
