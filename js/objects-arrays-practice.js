@@ -24,7 +24,7 @@ var persons = [
         age: 39,
         car: {
             make: 'tesla',
-            model: 3,
+            model: '3',
             year: 2019
         },
         mother: 'terry adams',
@@ -72,20 +72,28 @@ persons.push(
 persons.forEach(function (person) {
     console.log(person.name)
     console.log(person.age)
-    console.log(person.mother)
-    console.log(person.father)
+    console.log(person.car.make)
+    console.log(person.car.model)
     console.log(' --------- ')
+    console.log('')
 
 })
 
+var obj2 = {
+    name: 'test',
+    options: [1 ,2, 3]
 
+}
+console.log(obj2.options[1])
 var arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+//console.log(arr2.length)
+
 for(var i = 0; i < arr2.length; i++) {
-    console.log(arr2[i])
+    //console.log(arr2[i])
 }
 
 for(var j = arr2.length - 1; j >=0; j--) {
-    console.log(arr2[j])
+    //console.log(arr2[j])
 }
 
 
