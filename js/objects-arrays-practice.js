@@ -82,4 +82,8 @@ for(var i = 0; i < persons.length; i++) {
     console.log(persons[i])
 }
 
+for(var j = persons.length - 1; j >=0; j--) {
+    console.log(persons[j])
+}
+
 
