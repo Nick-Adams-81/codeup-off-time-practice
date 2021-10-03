@@ -18,7 +18,7 @@ arr1.pop()
 arr1.shift()
 console.log(arr1)
 
-var people = [
+var persons = [
     {
         name: 'nick adams',
         age: 39,
@@ -53,5 +53,14 @@ var people = [
         father: 'john doe sr'
     }
 ]
+console.log(persons)
+
+persons.forEach(function(person) {
+    console.log(person.name)
+    console.log(person.age)
+    console.log(person.mother)
+    console.log(person.father)
+
+})
 
 
